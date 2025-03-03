@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #e4e4e4;
+    padding: 1rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    width: inherit;
+    max-width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+    font-size: 1.4rem;
+    color: rgb(215, 250, 215);
+}
+
+header > p{
+    color: rgb(139, 139, 139);
+    font-size: 0.9rem;
+}
+
+.GameResultStatusWon{
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    background-color: rgb(54, 167, 54);
+    color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    width: 50vw;
+}
+
+.GameResultStatusLost{
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    background-color: #D02B2B;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    width: 50vw;
+}
+
+
+.GameResultStatus > h2{
+font-size: 1.5rem;
+}
+
+.GameResultStatus > p{
+    margin: 0px 0px 1.5rem 0px;
+    font-size: 1rem;
+    color: rgb(230, 230, 230);
+}
+
+.LanguagesCollection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    padding-top: 2rem;
+    gap: 5px;
+}
+
+.Languages{
+    text-align: center;
+    margin: 0;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    padding: 7px;
+}
+
+.WordToGuess{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 1rem;
+}
+
+.Letters{
+    background-color: #232323;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.7rem;
+    border-radius: 2px;
+}
+
+.AlphabetButtons{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 40rem;
+    gap:  8px;
+}
+
+.AlphabetLetters{
+    background-color: #d0b137;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+
+.AlphabetButtons > button:disabled{
+    background-color: #d0b13769;
+}
+
+
+.NewGameButton{
+    margin-top: 1.3rem;
+    background-color: rgb(73, 223, 193);
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 15rem;
+    border: none;
+}
+
+.LanguageLost{
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    background-color: #7b5dce;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    width: 50vw;
+    border: 1px dotted white;
+}
+
